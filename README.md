@@ -1,7 +1,8 @@
 # Phase Field Model Simulation of Dendritic Growth
 $$
-  \tau  \partial_t \phi = \nabla \left( W \nabla \phi \right) + \sum_{w=x,y} \partial_w \left(\left|\nabla \phi\right|^2 W \frac{\partial W}{\partial \left(\partial_w \phi\right)}\right) + \phi - \phi^3 - \lambda \left(\phi - \phi^2\right) u
+  \tau  \partial_t \phi = \nabla \left( W \nabla \phi \right) + \sum_{w=x,y} \partial_w \left(\left|\nabla \phi\right|^2 W \frac{\partial W}{\partial \left(\partial_w \phi\right)}\right) + \left[ \phi - \lambda u \left( 1 - \phi^ 2\right)\right] (1 - \phi^2)
 $$
+
 
 ## Requirements
 - `CMake`
